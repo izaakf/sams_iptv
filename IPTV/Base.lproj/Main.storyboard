@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aD4-zt-Zbh">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="KmX-NX-Pyd">
+            <objects>
+                <viewController id="0zX-Zh-tPx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9L-4G-2OW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yfS-Qw-xq5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings" id="5aS-st-aGo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1iO-gD-pX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="123"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="ZAQ-Fd-Efi">
+            <objects>
+                <viewController id="9P7-C2-o4j" customClass="Home" customModule="IPTV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nox-qp-klw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="XMLTV URL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3K-4x-u4y">
+                                <rect key="frame" x="39" y="324" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EPG URL (Optional)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGi-8j-NVO">
+                                <rect key="frame" x="39" y="391" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOI-r4-QI9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="Ov3-10-Gb8"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Sam's IPTV" id="sLW-XD-F0x"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFn-Zm-TUE">
+                                <rect key="frame" x="135" y="440" width="104" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aNC-ez-fag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signIn:" destination="9P7-C2-o4j" eventType="touchUpInside" id="gbH-wu-Vvj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T3K-4x-u4y" firstAttribute="centerX" secondItem="uOI-r4-QI9" secondAttribute="centerX" id="9Ci-gd-Vc6"/>
+                            <constraint firstItem="NFn-Zm-TUE" firstAttribute="centerX" secondItem="T3K-4x-u4y" secondAttribute="centerX" id="9K7-Ky-VJ4"/>
+                            <constraint firstItem="NFn-Zm-TUE" firstAttribute="leading" secondItem="8K5-Y1-fMM" secondAttribute="leading" constant="135" id="D6q-wv-Dsu"/>
+                            <constraint firstItem="NFn-Zm-TUE" firstAttribute="centerX" secondItem="nox-qp-klw" secondAttribute="centerX" id="GCS-a2-rc1"/>
+                            <constraint firstItem="NFn-Zm-TUE" firstAttribute="centerX" secondItem="uOI-r4-QI9" secondAttribute="centerX" id="Kvs-6a-5xE"/>
+                            <constraint firstItem="T3K-4x-u4y" firstAttribute="leading" secondItem="8K5-Y1-fMM" secondAttribute="leading" constant="39" id="NDo-Ga-LBz"/>
+                            <constraint firstItem="NFn-Zm-TUE" firstAttribute="centerX" secondItem="PGi-8j-NVO" secondAttribute="centerX" id="Xpp-Rt-zcX"/>
+                            <constraint firstItem="PGi-8j-NVO" firstAttribute="top" secondItem="T3K-4x-u4y" secondAttribute="bottom" constant="37" id="ZVw-fs-duE"/>
+                            <constraint firstItem="NFn-Zm-TUE" firstAttribute="top" secondItem="PGi-8j-NVO" secondAttribute="bottom" constant="19" id="gIV-tD-fr6"/>
+                            <constraint firstItem="8K5-Y1-fMM" firstAttribute="bottom" secondItem="NFn-Zm-TUE" secondAttribute="bottom" constant="200" id="ifT-tm-4rO"/>
+                            <constraint firstItem="uOI-r4-QI9" firstAttribute="top" secondItem="nox-qp-klw" secondAttribute="top" id="oPP-y4-kFa"/>
+                            <constraint firstItem="uOI-r4-QI9" firstAttribute="leading" secondItem="nox-qp-klw" secondAttribute="leading" id="vXh-pm-pb0"/>
+                            <constraint firstItem="T3K-4x-u4y" firstAttribute="leading" secondItem="PGi-8j-NVO" secondAttribute="leading" id="vqA-no-Lbc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8K5-Y1-fMM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="Account" id="WrD-LC-Kag"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="epgUrl" destination="PGi-8j-NVO" id="aMI-Xp-a1E"/>
+                        <outlet property="xmltvUrl" destination="T3K-4x-u4y" id="xdI-Af-dZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPh-lF-tIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349.5999999999999" y="-543.8423645320197"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ghj-xP-3Ox">
+            <objects>
+                <tabBarController id="aD4-zt-Zbh" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6VL-QF-Cmv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9P7-C2-o4j" kind="relationship" relationship="viewControllers" id="Uwy-NQ-8E1"/>
+                        <segue destination="0zX-Zh-tPx" kind="relationship" relationship="viewControllers" id="cuF-yS-tol"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fj-hl-Fzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-210"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Account" width="25" height="25"/>
+        <image name="Settings" width="25" height="25"/>
+    </resources>
+</document>
