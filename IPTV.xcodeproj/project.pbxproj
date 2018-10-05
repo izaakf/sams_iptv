@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB7CFFF521677EC800973903 /* Requestors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CFFF421677EC800973903 /* Requestors.swift */; };
+		AB7CFFFB2167845800973903 /* M3u.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CFFFA2167845800973903 /* M3u.swift */; };
+		ABB7C3F121665E1E00BD559B /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB7C3F021665E1E00BD559B /* Regex.framework */; };
 		ABD0769E2134574600A1F0B1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD0769D2134574600A1F0B1 /* Home.swift */; };
 		ABE394C421301A6700D44FC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE394C321301A6700D44FC0 /* AppDelegate.swift */; };
 		ABE394C621301A6700D44FC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE394C521301A6700D44FC0 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB7CFFF421677EC800973903 /* Requestors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestors.swift; sourceTree = "<group>"; };
+		AB7CFFFA2167845800973903 /* M3u.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u.swift; sourceTree = "<group>"; };
+		ABB7C3F021665E1E00BD559B /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = Carthage/Build/iOS/Regex.framework; sourceTree = "<group>"; };
 		ABD0769D2134574600A1F0B1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		ABE394C021301A6700D44FC0 /* IPTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE394C321301A6700D44FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE897CB21358D4F00EB9FAA /* Alamofire.framework in Frameworks */,
+				ABB7C3F121665E1E00BD559B /* Regex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 				ABE394CC21301A6900D44FC0 /* LaunchScreen.storyboard */,
 				ABE394CF21301A6900D44FC0 /* Info.plist */,
 				ABD0769D2134574600A1F0B1 /* Home.swift */,
+				AB7CFFF421677EC800973903 /* Requestors.swift */,
+				AB7CFFFA2167845800973903 /* M3u.swift */,
 				ABF23D912146D17E00A5DABB /* Alerts.swift */,
 			);
 			path = IPTV;
@@ -138,6 +147,7 @@
 		ABE897C921358D4E00EB9FAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABB7C3F021665E1E00BD559B /* Regex.framework */,
 				ABE897CA21358D4E00EB9FAA /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -212,13 +222,16 @@
 				TargetAttributes = {
 					ABE394BF21301A6700D44FC0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					ABE394D321301A6900D44FC0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = ABE394BF21301A6700D44FC0;
 					};
 					ABE394DE21301A6900D44FC0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = ABE394BF21301A6700D44FC0;
 					};
 				};
@@ -278,13 +291,15 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Regex.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Regex.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -293,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7CFFFB2167845800973903 /* M3u.swift in Sources */,
+				AB7CFFF521677EC800973903 /* Requestors.swift in Sources */,
 				ABE394C621301A6700D44FC0 /* ViewController.swift in Sources */,
 				ABD0769E2134574600A1F0B1 /* Home.swift in Sources */,
 				ABF23D922146D17E00A5DABB /* Alerts.swift in Sources */,
@@ -482,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sam.IPTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -504,7 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sam.IPTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -524,7 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sam.IPTVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPTV.app/IPTV";
 			};
@@ -545,7 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sam.IPTVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPTV.app/IPTV";
 			};
@@ -565,7 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sam.IPTVUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = IPTV;
 			};
@@ -585,7 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sam.IPTVUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = IPTV;
 			};
