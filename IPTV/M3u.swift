@@ -18,7 +18,7 @@ class M3u {
         var dict: [String: String] = [:]
         let match = regex?.findFirst(in: m3uData)
         if let match = match {
-            dict["name"]    = match.group(named: "match")
+            dict["name"]    = match.group(named: "name")
             dict["id"]      = match.group(named: "id")
             dict["logo"]    = match.group(named: "logo")
             dict["group"]   = match.group(named: "group")

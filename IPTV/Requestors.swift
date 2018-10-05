@@ -25,14 +25,13 @@ class Requestors: UIViewController {
             return
         }
         let response = makeRequest(url: xmltvUrl)
+        State.channels = [[String: String]]()
         response.responseString { response in
             let responseArray = response.description.components(separatedBy: "\n\n")
-            var channels: [[String: String]] = [[:]]
             for channel in responseArray {
                 let trimmed = channel.replacingOccurrences(of: "\n", with: " ")
-                channels.append(M3u().m3uParser(m3uData: trimmed))
+                State.channels.append(M3u().m3uParser(m3uData: trimmed))
             }
-            print(channels)
         }
     }
     
