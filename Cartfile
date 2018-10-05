@@ -1,2 +1,2 @@
 github "Alamofire/Alamofire" ~> 4.7.2
-github "thomaschristensen/Pantomime"
+github "crossroadlabs/Regex"
