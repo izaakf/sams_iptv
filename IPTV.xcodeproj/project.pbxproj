@@ -20,6 +20,7 @@
 		ABE394E421301A6900D44FC0 /* IPTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE394E321301A6900D44FC0 /* IPTVUITests.swift */; };
 		ABE897CB21358D4F00EB9FAA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE897CA21358D4E00EB9FAA /* Alamofire.framework */; };
 		ABF23D922146D17E00A5DABB /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF23D912146D17E00A5DABB /* Alerts.swift */; };
+		ABF57C11218B387A005DD0CD /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF57C10218B3879005DD0CD /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		ABE394E521301A6900D44FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABE897CA21358D4E00EB9FAA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		ABF23D912146D17E00A5DABB /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		ABF57C10218B3879005DD0CD /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				ABE394CF21301A6900D44FC0 /* Info.plist */,
 				ABD0769D2134574600A1F0B1 /* Home.swift */,
 				AB7CFFF421677EC800973903 /* Requestors.swift */,
+				ABF57C10218B3879005DD0CD /* State.swift */,
 				AB7CFFFA2167845800973903 /* M3u.swift */,
 				ABF23D912146D17E00A5DABB /* Alerts.swift */,
 			);
@@ -313,6 +316,7 @@
 				ABE394C621301A6700D44FC0 /* ViewController.swift in Sources */,
 				ABD0769E2134574600A1F0B1 /* Home.swift in Sources */,
 				ABF23D922146D17E00A5DABB /* Alerts.swift in Sources */,
+				ABF57C11218B387A005DD0CD /* State.swift in Sources */,
 				ABE394C421301A6700D44FC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
